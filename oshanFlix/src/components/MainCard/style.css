@@ -1,0 +1,24 @@
+.card-poster {
+  @apply w-full aspect-[3/4.5] rounded-md overflow-hidden relative border-2 border-transparent transition duration-200 hover:border-flix-orange;
+}
+.card-poster img {
+  @apply w-full h-full object-cover;
+}
+.card-poster-overlay {
+  @apply w-full h-full absolute top-0 transition duration-200 left-0 hover:backdrop-blur-sm hover:bg-white/25;
+}
+.card-poster-overlay img {
+  @apply w-1/3 h-1/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden;
+}
+.card-poster:hover .card-poster-overlay img {
+  @apply block;
+}
+.card-info {
+  @apply mt-2 opacity-90;
+}
+.card-info h1 {
+  @apply truncate;
+}
+.card-info p {
+  @apply text-xs bg-yellow-500 text-black font-semibold py-[2px] px-[5px] mt-[2px] flex flex-row gap-[1px] items-center w-10 rounded-sm opacity-95 truncate;
+}

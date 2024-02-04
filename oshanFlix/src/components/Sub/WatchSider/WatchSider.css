@@ -1,0 +1,38 @@
+.watch-sider {
+    @apply w-full h-[90vh] pt-[65px] px-[10px] md:px-[50px];
+  }
+  .watch-backdrop {
+    @apply w-full h-full overflow-hidden rounded-lg relative;
+  }
+  .watch-backdrop img {
+    @apply w-full h-full object-cover;
+  }
+  .watch-overlay {
+    @apply w-full h-full absolute top-0 left-0 flex flex-col  md:flex-row;
+  }
+  .watch-overlay-left,
+  .watch-overlay-right {
+    @apply w-full h-full;
+  }
+  .watch-overlay-right {
+    @apply backdrop-blur-sm bg-black/50 relative;
+  }
+  .watch-overlay-info-panel {
+    @apply flex flex-row items-center gap-3 uppercase;
+  }
+  .watch-overlay-info-genres {
+    @apply mt-1;
+  }
+  .watch-overlay-info-genres span {
+    @apply text-xs mr-1 py-[3px] pr-[7px];
+  }
+  .watch-overlay-info {
+    @apply w-[80%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .watch-overlay-info h1 {
+    @apply text-4xl md:text-7xl font-rocg;
+  }
+  .watch-overlay-info p {
+    @apply text-xs md:text-sm;
+  }
+  

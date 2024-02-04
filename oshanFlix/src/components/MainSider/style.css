@@ -1,0 +1,24 @@
+.main-sider {
+  @apply w-full h-screen relative;
+}
+.backdrop {
+  @apply w-full h-full object-cover;
+}
+.info {
+  @apply w-full h-full absolute px-[10px] top-0 left-0 flex bg-gradient-02 sm:bg-gradient-01 flex-col-reverse sm:flex-row justify-center items-end;
+}
+.details {
+  @apply w-full  h-[40%]  sm:h-4/5 p-[2%];
+}
+.details h1 {
+  @apply text-4xl md:text-7xl font-rocg;
+}
+.details p {
+  @apply text-xs md:text-sm;
+}
+.logo {
+  @apply w-full  h-[60%]  sm:h-4/5 flex justify-center items-center p-[10%];
+}
+.logo img {
+  @apply w-full;
+}

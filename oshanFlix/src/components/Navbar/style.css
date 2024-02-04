@@ -1,0 +1,99 @@
+/* General styling */
+.nav,
+.nav-links ul,
+.nav-links a,
+.nav-sider-links a,
+.nav-search-warper,
+.nav-logo,
+.nav-sider-start,
+.close-btn,
+.nav-sider-search-warper,
+.nav-ends {
+  @apply flex flex-row items-center;
+}
+
+.nav-links ul,
+.nav-ends {
+  @apply gap-3;
+}
+
+.nav-links li {
+  @apply cursor-pointer opacity-90 hover:text-flix-orange-shade-01;
+}
+.nav-links a,
+.nav-sider-links a {
+  @apply justify-center gap-1;
+}
+
+/* Navigation Bar */
+.nav {
+  @apply w-full z-50 h-auto py-[7px] px-[10px] md:px-[50px] font-Paul justify-between fixed bg-black/75;
+}
+
+.nav-logo {
+  @apply w-[115px] md:w-[135px];
+}
+
+.nav-links {
+  @apply ml-[40px] mr-auto;
+}
+
+.nav-search {
+  @apply outline-none py-[5px] pl-[30px] pr-[7px] rounded-md bg-[#333333];
+}
+
+.nav-search-warper {
+  @apply relative;
+}
+
+.nav-search-warper svg {
+  @apply absolute left-2;
+}
+
+.menu {
+  @apply mr-2 hidden;
+}
+
+/* Sidebar Navigation */
+.nav-sider {
+  @apply w-4/5 h-screen fixed flex flex-col items-center transition-all duration-300 top-0 left-[-100%] z-[60] bg-black/75;
+}
+
+.nav-sider-open {
+  @apply left-0;
+}
+
+.nav-sider-search-warper {
+  @apply relative mt-3;
+}
+
+.nav-sider-search-warper svg {
+  @apply absolute left-2;
+}
+
+.nav-sider-search-warper input {
+  @apply w-full;
+}
+
+.nav-sider-links ul {
+  @apply flex flex-col gap-3 mt-3;
+}
+
+.nav-sider-links li {
+  @apply cursor-pointer opacity-90 hover:text-flix-orange-shade-01;
+}
+
+.nav-sider-start {
+  @apply w-full h-auto justify-end;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1000px) {
+  .nav-links,
+  .nav-search-warper {
+    @apply hidden;
+  }
+  .menu {
+    @apply block;
+  }
+}
