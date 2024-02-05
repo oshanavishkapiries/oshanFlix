@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   //</React.StrictMode>,
 )
 
-console.log(store.getState());
-store.subscribe(() => {
-  console.log('State updated:', store.getState());
-});
+// console.log(store.getState());
+// store.subscribe(() => {
+//   console.log('State updated:', store.getState());
+// });
