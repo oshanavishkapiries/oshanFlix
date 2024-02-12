@@ -8,15 +8,14 @@ const MainSider = () => {
       <div className="main-sider">
         <img
           className="backdrop"
-          src="https://image.tmdb.org/t/p/original/u1rDHV98zbwG8NiWErF5yjOLN8T.jpg"
+          src="https://image.tmdb.org/t/p/original/u5GbnhfuhmBKhRjmZ7g5md9FJhF.jpg"
           alt="backdrop"
           loading="lazy"
         />
         <div className="info">
           <div className="details">
             <h1>
-              Your Ultimate destination for top qulity Tv Shows , Movies and
-              more ...
+              Your Ultimate destination for top qulity Tv Shows  ...
             </h1>
             <p>
               This service is personal project made for fun and entertainment so
@@ -34,7 +33,7 @@ const MainSider = () => {
           </div>
           <div className="logo">
             <img
-              src="https://image.tmdb.org/t/p/original/nWmG5I47DyMaw1kdNDwEPpvHqyN.png"
+              src="https://image.tmdb.org/t/p/original/qG5XZH1wR0VwJYrITvnkDARSsro.png"
               alt="logo"
               loading="lazy"
             />
