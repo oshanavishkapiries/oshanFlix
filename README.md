@@ -1,7 +1,7 @@
 
 # OshanFlix
 
-A personal TV series library using front and as a react and back in as a firebase and Express js
+A personal TV series library using React as a Frontend and firebase and Express js as a Backend
 
 
 
