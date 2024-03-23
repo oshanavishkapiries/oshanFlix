@@ -7,12 +7,14 @@ import { IoClose } from "react-icons/io5";
 import ButtonPrimary from "../Sub/ButtonPrimary";
 import { navSiderOpenClose } from "../../utils/toggles";
 import { useSelector } from "react-redux";
+import Search from "../Search/Search";
 
 const Navbar = () => {
   const desktop = useSelector((state) => state.controller.screenSize.desktop);
 
   return (
     <>
+      <Search />
       <nav className="nav">
         <div className="nav-logo">
           <img src="/img/logo.svg" alt="logo" loading="lazy" />

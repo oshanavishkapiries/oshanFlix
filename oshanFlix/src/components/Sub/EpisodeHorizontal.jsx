@@ -7,17 +7,17 @@ const HorizontalSider = ({ children }) => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 5,
-      slidesToSlide: 3, 
+      slidesToSlide: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 3,
-      slidesToSlide: 2, 
+      slidesToSlide: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 2,
-      slidesToSlide: 1, 
+      slidesToSlide: 1,
     },
   };
 
@@ -28,7 +28,7 @@ const HorizontalSider = ({ children }) => {
         draggable={true}
         showDots={false}
         responsive={responsive}
-        ssr={true} 
+        ssr={true}
         infinite={false}
         autoPlay={false}
         autoPlaySpeed={1000}
@@ -41,7 +41,7 @@ const HorizontalSider = ({ children }) => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-       { children }
+        {children}
       </Carousel>
     </>
   );

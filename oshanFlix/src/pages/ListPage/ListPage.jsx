@@ -24,8 +24,8 @@ const ListPage = () => {
         )}
         {data.length > 0 && (
           <>
-            <ListSider />
-            <div className="main-card-container fade-in">
+            <ListSider data={data} />
+            <div className="main-card-container fade-in mt-[-80px]">
               {data.map((item) => (
                 <MainCard key={item.id} item={item} />
               ))}

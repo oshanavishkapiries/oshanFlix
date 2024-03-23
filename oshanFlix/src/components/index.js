@@ -5,4 +5,13 @@ import MainCard from "./MainCard/MainCard";
 import EpisodeCard from "./EpisodeCard/EpisodeCard";
 import ListSider from "./ListSider/ListSider";
 
-export { Navbar , MainSider , Footer , MainCard , EpisodeCard , ListSider }
+
+
+export {
+  Navbar,
+  MainSider,
+  Footer,
+  MainCard,
+  EpisodeCard,
+  ListSider,
+};

@@ -30,14 +30,14 @@ export const getTVSeriesData = async (offset = 1, limitAmount = 30) => {
 
     querySnapshot.forEach((doc) => {
       const data = doc.data();
-      const { created_at, id, type, title, poster_url, rating } = data;
+      const { id, type, title, poster_url, backdrop_url, rating } = data;
 
       result.push({
-        created_at,
         id,
         type,
         title,
         poster_url,
+        backdrop_url,
         rating,
       });
     });

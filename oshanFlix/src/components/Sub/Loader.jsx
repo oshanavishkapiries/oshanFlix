@@ -6,7 +6,7 @@ const Loader = (props) => {
     <>
       <Player
         src="/lottie/loader.json"
-        className={ props.className || "w-[50px]" }
+        className={props.className || "w-[50px]"}
         loop
         autoplay
       />
