@@ -34,7 +34,7 @@ const Navbar = () => {
         )}
 
         <div className="nav-ends">
-          {/* {desktop && (
+          {desktop && (
             <div className="nav-search-warper">
               <IoIosSearch />
               <input
@@ -43,13 +43,13 @@ const Navbar = () => {
                 placeholder="Search"
               />
             </div>
-          )} */}
+          )}
 
           <div className="flex items-center">
             <button className="menu" onClick={navSiderOpenClose}>
               <IoMdMenu />
             </button>
-            {/* <ButtonPrimary text="Sign In" onClick={() => {}} /> */}
+            <ButtonPrimary text="Sign In" onClick={() => {}} />
           </div>
         </div>
       </nav>
@@ -62,10 +62,10 @@ const Navbar = () => {
             <IoClose />
           </button>
         </div>
-        {/* <div className="nav-sider-search-warper">
+        <div className="nav-sider-search-warper">
           <IoIosSearch />
           <input className="nav-search" type="search" placeholder="Search" />
-        </div> */}
+        </div>
         <div className="nav-sider-links">
           <ul>
             {navlinks.map((link, index) => (

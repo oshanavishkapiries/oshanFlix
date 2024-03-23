@@ -1,7 +1,7 @@
 const { initializeApp } = require("firebase/app");
 const { getFirestore, addDoc, collection } = require("firebase/firestore");
 
-const firebaseConfig = require('../../firebaseAuth.js');
+const firebaseConfig = require("../../firebaseAuth.js");
 
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
@@ -18,7 +18,7 @@ async function storeTvSeriesData() {
   }
 }
 //==================================
-const tvSeriesData = require('../data/73375.js');
+const tvSeriesData = require("../data/52814.js");
 //==================================
 // RUN : node ./TV/CRUD/C.js
 storeTvSeriesData();

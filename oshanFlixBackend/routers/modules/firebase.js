@@ -18,11 +18,10 @@ export const getTVSeriesData = async (offset = 1, limitAmount = 30) => {
   const result = [];
   try {
     const tvSeriesCollection = collection(db, "tv_series");
-    const orderByField = "title";
 
     const q = query(
       tvSeriesCollection,
-      orderBy(orderByField),
+      orderBy("created_at"),
       startAfter(offset),
       limit(limitAmount)
     );
@@ -31,9 +30,10 @@ export const getTVSeriesData = async (offset = 1, limitAmount = 30) => {
 
     querySnapshot.forEach((doc) => {
       const data = doc.data();
-      const { id, type, title, poster_url, rating } = data;
+      const { created_at, id, type, title, poster_url, rating } = data;
 
       result.push({
+        created_at,
         id,
         type,
         title,
@@ -58,7 +58,11 @@ export async function filterDataByIdAndType(id, type) {
   try {
     const collectionRef = collection(db, collectionName);
 
-    const q = query(collectionRef, where("id", "==", id), where("type", "==", type));
+    const q = query(
+      collectionRef,
+      where("id", "==", id),
+      where("type", "==", type)
+    );
     const querySnapshot = await getDocs(q);
     const filteredData = querySnapshot.docs.map((doc) => doc.data());
 

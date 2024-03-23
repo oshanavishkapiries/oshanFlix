@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MainCard, Navbar } from "../../components";
+import { MainCard, Navbar, ListSider } from "../../components";
 import axios from "axios";
 import Loader from "../../components/Sub/Loader";
 import "./style.css";
@@ -23,11 +23,14 @@ const ListPage = () => {
           </div>
         )}
         {data.length > 0 && (
-          <div className="main-card-container fade-in">
-            {data.map((item) => (
-              <MainCard key={item.id} item={item} />
-            ))}
-          </div>
+          <>
+            <ListSider />
+            <div className="main-card-container fade-in">
+              {data.map((item) => (
+                <MainCard key={item.id} item={item} />
+              ))}
+            </div>
+          </>
         )}
       </main>
     </>

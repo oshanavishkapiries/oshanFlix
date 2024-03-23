@@ -8,7 +8,7 @@ const MainSider = () => {
       <div className="main-sider">
         <img
           className="backdrop"
-          src="https://image.tmdb.org/t/p/original/u5GbnhfuhmBKhRjmZ7g5md9FJhF.jpg"
+          src="https://image.tmdb.org/t/p/original/zbEHDmLq1CzZD8rX1jYyCvibseG.jpg"
           alt="backdrop"
           loading="lazy"
         />
@@ -33,7 +33,7 @@ const MainSider = () => {
           </div>
           <div className="logo">
             <img
-              src="https://image.tmdb.org/t/p/original/qG5XZH1wR0VwJYrITvnkDARSsro.png"
+              src="https://image.tmdb.org/t/p/original/mJEmOx6DMkUN4zi8cmilojcFnn9.png"
               alt="logo"
               loading="lazy"
             />
