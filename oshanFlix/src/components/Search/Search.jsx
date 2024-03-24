@@ -1,13 +1,23 @@
-import './style.css';
+import "./style.css";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
 
 const Search = () => {
-    return (
-        <div className="bg-black/50 w-full flex justify-center items-center min-h-screen fixed z-[60]">
-            <div className="bg-green-400 w-3/4 md:w-1/2 h-[400px] rounded-md">
-
-            </div>
+  return (
+    <div className="search-pop-outline">
+      <div className="search-pop">
+        <div className="search-pop-input">
+          <div className="nav-sider-search-warper">
+            <IoIosSearch />
+            <input className="nav-search" type="search" placeholder="Search" />
+          </div>
+          <button className="text-2xl">
+            <IoIosCloseCircleOutline />
+          </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Search;

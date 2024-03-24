@@ -1,0 +1,9 @@
+.search-pop-outline {
+  @apply bg-black/50 w-full flex justify-center items-center min-h-screen fixed z-[60];
+}
+.search-pop {
+  @apply bg-gray-900 w-3/4 md:w-1/2 h-[400px] rounded-xl;
+}
+.search-pop-input {
+  @apply w-full p-5 flex flex-row items-center justify-center gap-2;
+}

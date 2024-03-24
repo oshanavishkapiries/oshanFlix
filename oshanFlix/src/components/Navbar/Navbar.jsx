@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Search />
+      {/* <Search /> */}
       <nav className="nav">
         <div className="nav-logo">
           <img src="/img/logo.svg" alt="logo" loading="lazy" />
@@ -64,7 +64,7 @@ const Navbar = () => {
             <IoClose />
           </button>
         </div>
-        <div className="nav-sider-search-warper">
+        <div className="nav-sider-search-warper mt-3">
           <IoIosSearch />
           <input className="nav-search" type="search" placeholder="Search" />
         </div>
